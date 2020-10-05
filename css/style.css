@@ -103,7 +103,6 @@ h5 {
 .lives-bg {
   background-image: url(../assets/bg-lives.svg);
   height: auto;
-  width: 100%;
 }
 
 .grid__container-2 {
@@ -162,4 +161,10 @@ h5 {
 svg {
   width: 100%;
   height: auto;
+}
+
+.creditos {
+  background-image: url(../assets/creditos.png);
+  background-size: cover;
+  width: 100%;
 }
