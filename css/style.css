@@ -1,0 +1,165 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7f1420;
+}
+
+img {
+  display: block;
+}
+
+p {
+  font-size: 14px;
+  margin: 0;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.video__iframe {
+  height: 100%;
+  min-height: 80vh;
+  width: 100%;
+}
+
+.map {
+  height: auto;
+  width: 100%;
+}
+
+.grid__container {
+  display: grid;
+  grid-template-areas:
+    "video video video"
+    "content content sidebar"
+    "footer footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0fr 0fr;
+}
+
+.video__container {
+  grid-area: video;
+}
+
+.cafe__bg {
+  grid-area: video-start / sidebar-start / footer-end / sidebar-end;
+  z-index: 1;
+}
+
+.cafe__bg img {
+  width: 250px;
+}
+
+.logo {
+  transform: scale(0.9);
+}
+
+.card--no-border {
+  border: none;
+}
+
+.card__address {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .logo {
+    transform: scale(0.7);
+  }
+}
+
+.d-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* only one column */
+  grid-template-rows: 1fr; /* 2 rows */
+}
+
+.map-g {
+  grid-column: 1; /* first-column */
+  grid-row: 1; /* first row */
+}
+
+.bg-g {
+  align-self: end;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: end;
+  width: 100%;
+  z-index: 1;
+}
+
+.bg-g img {
+  width: 100%;
+}
+
+.lives-bg {
+  background-image: url(../assets/bg-lives.svg);
+  height: auto;
+  width: 100%;
+}
+
+.grid__container-2 {
+  display: grid;
+  grid-template-areas: "content content sidebar";
+  grid-template-columns: 2fr 2fr 0.5fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.dates {
+  grid-area: content;
+  padding-top: 24px;
+}
+
+.cafe__bg-2 {
+  grid-area: 1/4;
+}
+
+.media {
+  margin: 8px;
+}
+
+.lives__date {
+  background-color: #2d140d;
+  border-radius: 24px;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  margin: 8px;
+  width: 100px;
+}
+
+.lives__instagram {
+  font-weight: bold;
+}
+
+.lives__date p {
+  font-size: 16px;
+}
+
+.media-body p {
+  font-size: 16px;
+  margin-left: 24px;
+  margin-top: 2px;
+}
+
+.media + .media {
+  margin-top: 48px;
+}
+
+.media-body p + p {
+  padding-top: 8px;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
